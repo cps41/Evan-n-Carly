@@ -8,6 +8,9 @@ class Timer_Typer:
             if keyboard.read_key() == "enter":
                 print('Pressed Enter')
                 break
+            if keyboard.read_key() == "tab":
+                print('Pressed Tab')
+                break
 
 def main():
     t = Timer_Typer()
