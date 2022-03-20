@@ -1,4 +1,5 @@
 import keyboard
+from datetime import datetime
 
 class Timer_Typer:
     def __init__(self):
@@ -6,10 +7,12 @@ class Timer_Typer:
     def event_loop(self):
         while True:
             if keyboard.read_key() == "enter":
-                print('Pressed Enter')
+                time = datetime.datetime.now()
+                print(f'Pressed Enter at {time}')
                 break
             if keyboard.read_key() == "tab":
-                print('Pressed Tab')
+                time = datetime.datetime.now()
+                print(f'Pressed Tab at {time}')
                 break
 
 def main():
